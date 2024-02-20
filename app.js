@@ -7,3 +7,9 @@ function createTask(text){
     li.textContent = text;
     return li;
 }
+
+button.addEventListener('click',()=>{
+    let text = input.value;
+    let task = createTask(text);
+    TaskList.appendChild(task);
+})
