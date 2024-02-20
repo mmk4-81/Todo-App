@@ -31,9 +31,24 @@ body {
 
 input{
     width: 75%;
+    float: left;
     font-size: 16px;
     padding: 10px;
     border-radius: 5px;
     outline: none;
     border: none;
 }
+
+.addbtn{
+    width: 25%;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #d9d9d9;
+    transition: 0.3s;
+    color: #555;
+    float: left;
+    border-radius: 5px;
+}
+
