@@ -15,3 +15,7 @@ button.addEventListener('click',()=>{
     TaskList.appendChild(task);
     input.value='';
 })
+
+TaskList.addEventListener('click',(event)=>{
+    event.target.parentElement.parentElement.style.display = 'none';
+})
