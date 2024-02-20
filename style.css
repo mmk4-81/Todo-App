@@ -8,7 +8,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: self-start;
     background-image: linear-gradient(102.7deg, rgba(253, 218, 255, 1) 8.2%, rgba(223, 173, 252, 1) 19.6%, rgba(173, 205, 252, 1) 36.8%, rgba(173, 252, 244, 1) 73.2%, rgba(202, 248, 208, 1) 90.9%);
     background-attachment: fixed;
 }
@@ -18,14 +18,14 @@ body {
 }
 
 .container .header {
-    background-color: #f69517;
+    /* background-color: #f69517; */
     padding: 15px 40px 30px;
     color: rgb(198, 25, 161);
     text-align: center;
 }
 
 .container .header h2{
-    margin: 10px;
+    margin: 40px;
     font-size: 45px;
 }
 
@@ -72,7 +72,7 @@ input{
 }
 
 .TaskList li{
-    width: 60px;
+    width: 600px;
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -80,8 +80,25 @@ input{
     font-size: 18px;
     transition: 0.3s;
     user-select: none;
+    border-radius: 3px;
+    border-bottom: 1px solid rgb(205,204,204);
+    /* text-align: right; */
 }
 
 .TaskList li:hover{
     background-color: rgb(205,204,204);
+}
+
+.closeBtn{
+    position: absolute;
+    display: none;
+    right: 15px;
+}
+
+.TaskList li:hover .closeBtn{
+    display: inline-block;
+}
+
+.closeBtn:hover{
+    color: #ec1d1d;
 }
