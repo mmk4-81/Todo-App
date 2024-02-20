@@ -61,3 +61,12 @@ input{
     display: table;
     clear: both;
 }
+
+.container .TaskList{
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+ul{
+    list-style-type: none;
+}
