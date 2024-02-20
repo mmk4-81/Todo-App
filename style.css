@@ -18,7 +18,7 @@ body {
 }
 
 .container .header {
-    /* background-color: #f69517; */
+    background-color: #f69517;
     padding: 15px 40px 30px;
     color: rgb(198, 25, 161);
     text-align: center;
@@ -56,17 +56,32 @@ input{
     background-color: #bbb;
 }
 
-.container .header ::after{
-    content: '';
+.container .header::after{
+    content: "";
     display: table;
     clear: both;
 }
 
-.container .TaskList{
+/* .container .TaskList{
     max-height: 300px;
     overflow-y: auto;
+} */
+
+.TaskList{
+    list-style-type: none;
 }
 
-ul{
-    list-style-type: none;
+.TaskList li{
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background-color: #eee;
+    font-size: 18px;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.TaskList li:hover{
+    background-color: rgb(205,204,204);
 }
