@@ -12,4 +12,5 @@ button.addEventListener('click',()=>{
     let text = input.value;
     let task = createTask(text);
     TaskList.appendChild(task);
+    input.value='';
 })
