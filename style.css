@@ -15,16 +15,19 @@ body {
 
 .container {
     width: 600px;
+    margin-top: 30px;
 }
 
 .container .header {
     /* background-color: #f69517; */
+    border-radius: 10px;
     padding: 15px 40px 30px;
-    color: rgb(198, 25, 161);
     text-align: center;
+    border: 3px solid #fff;
 }
 
 .container .header h2{
+    color: rgb(198, 25, 161);
     margin: 40px;
     font-size: 45px;
 }
@@ -62,13 +65,15 @@ input{
     clear: both;
 }
 
-/* .container .TaskList{
+.container .TaskList{
     max-height: 300px;
     overflow-y: auto;
-} */
+    
+}
 
 .TaskList{
     list-style-type: none;
+
 }
 
 .TaskList li{
@@ -101,4 +106,10 @@ input{
 
 .closeBtn:hover{
     color: #ec1d1d;
+}
+
+.TaskList li.done{
+    background-color: #888;
+    color: #fff;
+    text-decoration: line-through;
 }
