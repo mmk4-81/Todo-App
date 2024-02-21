@@ -59,6 +59,8 @@ input{
     color: #555;
     float: left;
     border-radius: 5px;
+    font-family: 'Yekan', Courier, monospace;
+
 }
 
 .addbtn:hover{
