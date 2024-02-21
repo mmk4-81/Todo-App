@@ -66,8 +66,9 @@ input{
 }
 
 .container .TaskList{
-    max-height: 300px;
+    max-height: 450px;
     overflow-y: auto;
+    overflow-x: hidden;
     
 }
 
@@ -97,7 +98,7 @@ input{
 .closeBtn{
     position: absolute;
     display: none;
-    right: 15px;
+    right: 25px;
 }
 
 .TaskList li:hover .closeBtn{
