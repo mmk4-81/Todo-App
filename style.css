@@ -114,14 +114,9 @@ input{
     text-decoration: line-through;
 }
 
-.TaskList li.done::before{
-    content: '';
-    width: 8px;
-    height: 16px;
+.TaskList li.done::before {
+    content: "\2713";
     position: absolute;
     left: 15px;
     top: 8px;
-    border-color: #fff;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
 }
