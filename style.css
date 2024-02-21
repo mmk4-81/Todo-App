@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url(fonts/Yekan.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +44,8 @@ input{
     border-radius: 5px;
     outline: none;
     border: none;
+    font-family: 'Yekan', Courier, monospace;
+
 }
 
 .addbtn{
@@ -74,6 +80,7 @@ input{
 
 .TaskList{
     list-style-type: none;
+    font-family: 'Yekan', Courier, monospace;
 
 }
 
