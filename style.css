@@ -113,3 +113,15 @@ input{
     color: #fff;
     text-decoration: line-through;
 }
+
+.TaskList li.done::before{
+    content: '';
+    width: 8px;
+    height: 16px;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    border-color: #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
