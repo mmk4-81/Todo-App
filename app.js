@@ -17,5 +17,6 @@ button.addEventListener('click',()=>{
 })
 
 TaskList.addEventListener('click',(event)=>{
-    event.target.parentElement.parentElement.style.display = 'none';
+    if(event.target.nodeName=== 'I')
+        event.target.parentElement.parentElement.style.display = 'none';
 })
