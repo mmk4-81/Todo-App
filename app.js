@@ -15,6 +15,7 @@ else{
 
 function createTask(text) {
     let li = document.createElement('li');
+
     li.textContent = text;
     return li;
 }
@@ -34,7 +35,10 @@ button.addEventListener('click', () => {
 
 TaskList.addEventListener('click', (event) => {
     if (event.target.classList.contains('fa-trash-can')) {
-        event.target.parentElement.parentElement.style.display = 'none';
+        let target = event.target.parentElement.parentElement;   
+        target.style.display = 'none';
+        tasks.splice(tasks.indexOf(target.textContent),1);
+        localStorage.setItem('todo',tasks);
     }
     
     if (event.target.nodeName === 'LI') {
@@ -60,5 +64,3 @@ function ShowTasks(){
     }
 }
 
-let array = getTasks();
-console.log(array);
