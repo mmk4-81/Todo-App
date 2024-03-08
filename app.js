@@ -1,7 +1,14 @@
 let button = document.querySelector('button');
 let input = document.querySelector('input');
 let TaskList = document.querySelector('ul');
-let tasks = [];
+let tasks ;
+if(!localStorage.getItem('todo')){
+    tasks=[];
+}
+else{
+
+}
+
 
 function createTask(text) {
     let li = document.createElement('li');
@@ -38,3 +45,6 @@ function SaveTask(text){
     localStorage.setItem('todo',tasks);
 }
 
+function getTasks(){
+    return localStorage.getItem('todo').split(',');
+}
