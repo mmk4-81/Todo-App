@@ -6,7 +6,7 @@ if(!localStorage.getItem('todo')){
     tasks=[];
 }
 else{
-
+    tasks = getTasks();
 }
 
 
@@ -47,4 +47,12 @@ function SaveTask(text){
 
 function getTasks(){
     return localStorage.getItem('todo').split(',');
+}
+
+function ShowTasks(){
+    for(let taskText of getTasks()){
+        let task = createTask(taskText );
+        task.innerHTML += '<span class="closeBtn"><i class="fa-solid fa-trash-can"></i></span><span class="editBtn"><i class="fa-solid fa-edit"></i></span>';
+        TaskList.appendChild(task);
+    }
 }
