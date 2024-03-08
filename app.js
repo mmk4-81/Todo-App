@@ -25,7 +25,7 @@ button.addEventListener('click', () => {
         let task = createTask(text);
         task.innerHTML += '<span class="closeBtn"><i class="fa-solid fa-trash-can"></i></span><span class="editBtn"><i class="fa-solid fa-edit"></i></span>';
         TaskList.appendChild(task);
-        SaveTask(task);
+        SaveTask(text);
         input.value = '';
     }
 })
@@ -60,3 +60,5 @@ function ShowTasks(){
     }
 }
 
+let array = getTasks();
+console.log(array);
