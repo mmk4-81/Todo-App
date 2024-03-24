@@ -110,27 +110,19 @@ input{
     right: 25px;
 }
 
-.editBtn{
-    position: absolute;
-    display: none;
-    right: 50px;
-}
+
 
 .TaskList li:hover .closeBtn{
     display: inline-block;
 }
 
-.TaskList li:hover .editBtn{
-    display: inline-block;
-}
+
 
 .closeBtn:hover{
     color: #ec1d1d;
 }
 
-.editBtn:hover{
-    color: #28c932;
-}
+
 
 
 .TaskList li.done{

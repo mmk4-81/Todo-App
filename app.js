@@ -24,7 +24,7 @@ button.addEventListener('click', () => {
     let text = input.value;
     if (!(text === '')) {
         let task = createTask(text);
-        task.innerHTML += '<span class="closeBtn"><i class="fa-solid fa-trash-can"></i></span><span class="editBtn"><i class="fa-solid fa-edit"></i></span>';
+        task.innerHTML += '<span class="closeBtn"><i class="fa-solid fa-trash-can"></i></span>';
         TaskList.appendChild(task);
         SaveTask(text);
         input.value = '';
@@ -59,7 +59,7 @@ function getTasks(){
 function ShowTasks(){
     for(let taskText of getTasks()){
         let task = createTask(taskText );
-        task.innerHTML += '<span class="closeBtn"><i class="fa-solid fa-trash-can"></i></span><span class="editBtn"><i class="fa-solid fa-edit"></i></span>';
+        task.innerHTML += '<span class="closeBtn"><i class="fa-solid fa-trash-can"></i></span>';
         TaskList.appendChild(task);
     }
 }
